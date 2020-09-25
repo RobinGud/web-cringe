@@ -77,11 +77,19 @@ p::before {
   content: "p";
 }
 
-* {
+*:not(.ya-share2__icon):not(.ya-share2__badge):not(.ya-share2):not(.ya-share2__container):not(.ya-share2__list):not(.ya-share2__item) {
   position: relative;
   padding: 25px 25px 20px;
   margin: 0;
   border-radius: 4px;
+}
+
+.ya-share2__container {
+  padding: 0px;
+}
+
+.ya-share2__list {
+  padding: 0px;
 }
 
 *:not(:last-child):not(li) {
